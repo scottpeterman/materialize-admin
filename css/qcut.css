@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  min-height: 100vh; }
+
+body {
+  line-height: 1.42857143; }
+
+#header {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+  height: 70px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  left: 0;
+  top: 0; }
+  #header nav {
+    height: 70px;
+    padding: 0px 15px; }
+  #header a {
+    height: 70px; }
+
+#main {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 110px;
+  overflow-x: hidden; }
+  #main #sidebar {
+    width: 240px; }
+    #main #sidebar .toggled {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+    #main #sidebar .side-nav.fixed {
+      padding-bottom: 125px;
+      top: 65px; }
+      #main #sidebar .side-nav.fixed .collapsible-header {
+        padding: 0px 35px; }
+    #main #sidebar .bold i {
+      position: absolute;
+      left: 4px;
+      font-size: 20px;
+      top: 8px;
+      width: 25px;
+      text-align: center;
+      padding: 14px 5px; }
+    #main #sidebar .no-padding i {
+      position: absolute;
+      left: 4px;
+      font-size: 20px;
+      top: 0px;
+      width: 25px;
+      text-align: center;
+      padding: 0px 5px; }
+  #main .sidebar {
+    position: fixed;
+    height: calc(100% - 65px);
+    top: 65px;
+    z-index: 10; }
+  #main .profile-menu {
+    display: block;
+    height: 129px;
+    margin-bottom: 5px;
+    width: 100%;
+    background: url(../images/profile-menu.png) no-repeat left top;
+    background-size: 100%; }
+  #main .profile-menu .profile-pic {
+    padding: 12px; }
+    #main .profile-menu .profile-pic img {
+      width: 47px;
+      height: 47px;
+      border-radius: 50%;
+      border: 3px solid rgba(0, 0, 0, 0.14);
+      box-sizing: content-box; }
+  #main .profile-menu .profile-info {
+    background: rgba(0, 0, 0, 0.37);
+    padding: 0px 14px;
+    color: #fff;
+    position: relative;
+    line-height: 28px;
+    margin-top: -8px; }
+  #main #content {
+    padding-left: 240px; }
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 90px;
+  color: #a2a2a2; }
